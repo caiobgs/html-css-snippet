@@ -1,0 +1,38 @@
+
+@media (max-width: 1080px){
+    
+    html{
+        /* O tamanho de fonte padrão é 16px, dessa forma para telas menores de 1080 a fonte ficara com um tamanho
+        de 93.75% 16*93.75 -> 15px.
+        tendo como objetivo a responsividade do sistema é recomendada a utilização da medida rem, que por sua vez
+        se baseia no tamanho da fonte utilizada, ou seja, tendo em mente q a fonte será de 15px, 1rem equivale a 15px,
+        tendo o valor base da fonte sempre variando de a cordo com o tamanho da tela. */
+        font-size: 93.75%; 
+    }
+}
+
+@media (max-width: 720px){
+    
+    html{
+        font-size: 87.5%; 
+    }
+}
+
+* {
+    /* Reset para tirar todos os espaçamentos nativos das tags html */
+    margin: 0;
+    padding: 0;
+    /* Calcula como o tamanho total do elemento vai se comportar.
+    border-box não permite que o tamanho maximo passado como width seja passado. */
+    box-sizing: border-box;
+}
+
+body {
+    /* Funciona apenas em navegadores q tem o chome como base, ajuda a tirar o cerrilhado das fontes */
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    height: 100px;
+    background-color: rgb(72, 99, 255);
+}
