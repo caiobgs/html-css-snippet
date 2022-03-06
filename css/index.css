@@ -18,6 +18,10 @@
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 * {
     /* Reset para tirar todos os espaçamentos nativos das tags html */
     margin: 0;
@@ -33,6 +37,29 @@ body {
 }
 
 .container {
-    height: 100px;
     background-color: rgb(72, 99, 255);
+}
+
+.content {
+    width: 1220px;
+    /* Centraliza a div no meio da tela */
+    margin: 0 auto;
+    padding: 7rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content button{
+    background-color: rgb(140, 0, 255);
+    border-style: none;
+    border-radius: 0.75rem;
+    min-width: 7rem;
+    padding: 1rem;
+    color: rgb(192, 192, 192);
+    transition: 0.3s;
+}
+
+.content button:hover {
+    /* Permite adicionar varias funções que adicionam algum efeito */
+    filter:brightness(0.9)
 }
